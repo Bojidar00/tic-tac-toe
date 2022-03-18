@@ -1,0 +1,17 @@
+[features]
+seeds = false
+[programs.localnet]
+tic_tac_toe = "GjFMQH8Rmp4NGFhq38yPpYwSrdg5PS5ccqBVAVfeWzxn"
+
+[programs.testnet]
+tic_tac_toe = "GjFMQH8Rmp4NGFhq38yPpYwSrdg5PS5ccqBVAVfeWzxn"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "testnet"
+wallet = "/home/bojko/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
